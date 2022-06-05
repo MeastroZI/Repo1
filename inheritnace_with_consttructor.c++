@@ -22,8 +22,9 @@ class child : private parents
 {
     public:
 
-    //mylearn=y  cant access the variable directly
-    child (int y)
+    //mylearn=y  cant access the variable directlyz
+    child (int y)//doubt why we need to mqke default contructo in base class if we make the 
+    //paramirize constructor in base and derivide
     {
         getskill(y);
     }
