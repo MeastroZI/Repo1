@@ -5,7 +5,7 @@ class parents
 {
     public:
     int totlang= 10, mylearn ;
-        parents(){};
+        parents(){}; //<-- default constructor
         parents(int x){
             cout<<x;
         }
@@ -18,15 +18,20 @@ class parents
 };
 
 
-class child : private parents
-{
+class child : public parents
+{   int x;
     public:
 
-    //mylearn=y  cant access the variable directlyz
-    child (int y)//doubt why we need to make default contructo in base class if we make the 
+    //mylearn=y  cant access the variable directly
+    child (int y)//-----> imp note     we have to make the default construtor in parent class if paremetricz constructor is present in bothe base and derived calss
+    
+    
+    
+    //doubt why we need to make default contructor in base class if we make the 
     //paramirize constructor in base and derivide
     {
-        getskill(y);
+        //getskill(y);
+        x=y;
     }
     
 };
