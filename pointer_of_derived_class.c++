@@ -38,4 +38,7 @@ int main()
 //             |                      
 //             V
 // In this display function of base class is run even if make pointer point to the derived class this is something know as a LATE BINDING  means in this compiler bind the pointer with the base class bcz it bind the class by checking the pointer's type 
+
+// so yo over come this problem we can use virtual function in which we have to use the keyword virtual before function 
+
 }
