@@ -8,7 +8,7 @@ class test
 
 /*    void setdata(int a)
     {
-        //a=a;  --->?  /* imp point local variable is the first priority in c++ do int this function both the "a"  in a=a is the a of the function so the value of the "a" of class is not set and show the garbage value so in this situation we use the this pointer 
+        //a=a;  --->?  /* imp point : local variable is the first priority in c++ do int this function both the "a"  in a=a is the a of the function so the value of the "a" of class is not set and show the garbage value so in this situation we use the this pointer 
 //        this->a =a;
 //          OR
 //      (*this).a =a;
